@@ -1,6 +1,8 @@
 package access_token
 
-import "time"
+import (
+	"time"
+)
 
 // Access Token struct
 // // AccessToken generate when user and password is correct and successed
@@ -20,10 +22,14 @@ const (
 
 func GetNewAccessToken() AccessToken {
 	return AccessToken{
-		Expires: time.Now().UTC().Add(expirationTime * time.Hour).unix(),
+		Expires: time.Now().UTC().Add(expirationTime * time.Hour).Unix(),
 	}
 }
 
 func (at AccessToken) isExpired() bool {
-	return time.unix(at.isExpired(), 0).Before(time.Now().UTC())
+	now := time.Now().UTC()
+	expirationTime := time.Unix(at.Expires, 0)
+	// fmt.Println(expirationTime)
+	return expirationTime.Before(now)
+	// time.Unix(at.Expires(), 0).Before(time.Now().UTC())
 }
