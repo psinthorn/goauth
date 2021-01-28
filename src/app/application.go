@@ -13,6 +13,13 @@ var (
 
 func StartApplication(port string) {
 
+	// Conntect to Cassandra just to make sure we can create session
+	session, dbErr := cassandra.GetSession()
+	if dbErr != nil {
+		panic(dbErr)
+	}
+	session.Close()
+
 	dbRepository := db.NewRepository()
 	atService := access_token.NewService(dbRepository)
 	atHandler := http.NewHandler(atService)

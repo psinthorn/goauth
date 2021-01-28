@@ -17,5 +17,11 @@ func NewRepository() DbRepository {
 }
 
 func (r dbRepository) GetById(id string) (*access_token.AccessToken, *errors.ErrorRespond) {
+	// session, err := cassandra.GetSession()
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// defer session.Close()
+	// return session, errors.NewInternalServerError("Please implement database connection")
 	return nil, errors.NewInternalServerError("Please implement database connection")
 }
