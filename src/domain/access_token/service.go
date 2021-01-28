@@ -27,7 +27,7 @@ func NewService(repo Repository) Service {
 func (s *service) GetById(id string) (*AccessToken, *errors.ErrorRespond) {
 	id = strings.TrimSpace("id")
 	if len(id) == 0 {
-		return nil, errors.NewBadRequest("Invalid Access Token ID")
+		return nil, errors.NewBadRequestError("Invalid Access Token ID")
 	}
 	accessToken, err := s.repository.GetById(id)
 	if err != nil {
