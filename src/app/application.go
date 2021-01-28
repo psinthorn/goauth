@@ -2,6 +2,7 @@ package app
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/psinthorn/goauth/src/clients/cassandra"
 	"github.com/psinthorn/goauth/src/domain/access_token"
 	"github.com/psinthorn/goauth/src/http"
 	"github.com/psinthorn/goauth/src/repository/db"
