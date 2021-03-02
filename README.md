@@ -57,7 +57,6 @@ Stop the service like this:
 docker stop cassandra
 ```
 
-
 Start it again like this:
 ```
 docker start cassandra
