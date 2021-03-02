@@ -11,6 +11,7 @@ var (
 func init() {
 	// Connect to Cassandra Cluster
 	cluster = gocql.NewCluster("127.0.0.1")
+	cluster.ProtoVersion = 3
 	cluster.Keyspace = "oauth"
 	cluster.Consistency = gocql.Quorum
 }

@@ -35,12 +35,27 @@ Run commands in cqlsh like this:
 docker exec -it cassandra cqlsh
 ```
 
+To access key spaces
+```
+use oauth;
+```
+
+To show kyspaces
+```
+describe keyspaces;
+```
+
+To show tables in key space
+```
+describe tables;
+```
+
+
 
 Stop the service like this:
 ```
 docker stop cassandra
 ```
-
 
 Start it again like this:
 ```
