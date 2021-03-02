@@ -1,6 +1,5 @@
-module github.com/psinthorn/goauth
-
-go 1.15
+module https://github.com/psinthorn/gostore_goauth-api
+go 1.16
 
 require (
 	github.com/gin-gonic/gin v1.6.3
