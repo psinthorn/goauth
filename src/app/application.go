@@ -12,7 +12,7 @@ var (
 	router = gin.Default()
 )
 
-func StartApplication(port string) {
+func StartApplication() {
 
 	// Conntect to Cassandra just to make sure we can create session
 	session, dbErr := cassandra.GetSession()
@@ -27,5 +27,5 @@ func StartApplication(port string) {
 
 	router.GET("/oauth/access_token/:access_token_id", atHandler.GetById)
 
-	router.Run(":8083")
+	router.Run(":8080")
 }
