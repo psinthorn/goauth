@@ -3,7 +3,7 @@ package access_token
 import (
 	"strings"
 
-	"github.com/psinthorn/gostore_goauth-api/src/utils/errors"
+	"github.com/psinthorn/gostack_goauth-api/src/utils/errors"
 )
 
 type Repository interface {
