@@ -1,4 +1,4 @@
-module https://github.com/psinthorn/gostore_goauth-api
+module github.com/psinthorn/gostore_goauth-api
 go 1.16
 
 require (

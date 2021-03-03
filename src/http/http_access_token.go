@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/psinthorn/goauth/src/domain/access_token"
+	"github.com/psinthorn/gostore_goauth-api/src/domain/access_token"
 )
 
 type AccessTokenHandler interface {
