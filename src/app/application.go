@@ -2,10 +2,10 @@ package app
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/psinthorn/goauth/src/clients/cassandra"
-	"github.com/psinthorn/goauth/src/domain/access_token"
-	"github.com/psinthorn/goauth/src/http"
-	"github.com/psinthorn/goauth/src/repository/db"
+	"github.com/psinthorn/gostore_goauth-api/src/clients/cassandra"
+	"github.com/psinthorn/gostore_goauth-api/src/domain/access_token"
+	"github.com/psinthorn/gostore_goauth-api/src/http"
+	"github.com/psinthorn/gostore_goauth-api/src/repository/db"
 )
 
 var (

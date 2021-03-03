@@ -1,9 +1,9 @@
 package db
 
 import (
-	"github.com/psinthorn/goauth/src/clients/cassandra"
-	"github.com/psinthorn/goauth/src/domain/access_token"
-	"github.com/psinthorn/goauth/src/utils/errors"
+	"github.com/psinthorn/gostore_goauth-api/src/clients/cassandra"
+	"github.com/psinthorn/gostore_goauth-api/src/domain/access_token"
+	"github.com/psinthorn/gostore_goauth-api/src/utils/errors"
 )
 
 type DbRepository interface {
